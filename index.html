@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKYFLOW ESPORTS — Official Org</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #0a0014;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #0e001a;
+            border-bottom: 2px solid purple;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #c39bff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: white;
+        }
+
+        /* HERO */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1600289036233-61a6e74a1df8?auto=format&fit=crop&w=1400&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: "Orbitron", sans-serif;
+            font-size: 4rem;
+            color: #b76dff;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            color: #d7b7ff;
+            width: 60%;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 60px;
+        }
+        h2 {
+            font-family: "Orbitron", sans-serif;
+            color: #c993ff;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        /* PLAYER GRID */
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        /* PLAYER CARD */
+        .player-card {
+            background: #170027;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid purple;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .player-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 0px 15px purple;
+        }
+
+        /* FIXED CIRCLE IMAGE */
+        .player-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #b76dff;
+            margin-bottom: 15px;
+        }
+
+        .insta-btn {
+            display: inline-block;
+            margin-top: 10px;
+            background: #b76dff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .insta-btn:hover {
+            background: #9f4aff;
+        }
+
+        /* ABOUT + ACHIEVEMENTS */
+        .info-box {
+            background: #150022;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid purple;
+            margin-top: 20px;
+        }
+
+        /* REVIEWS + FEEDBACK */
+        .review-box, .feedback-box {
+            background: #1a002e;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid purple;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background: #0d0017;
+            color: white;
+            resize: none;
+        }
+        button {
+            margin-top: 10px;
+            padding: 12px 20px;
+            background: purple;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #a200ff;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background: #0e0018;
+            border-top: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <h2>SKYFLOW ESPORTS</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#players">Players</a>
+            <a href="#girls">Girls</a>
+            <a href="#ex">Ex Players</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#feedback">Feedback</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>WELCOME TO FF ESPORTS</h1>
+        <p>The official information hub of our professional lineup, achievements, ex-roster, and community feedback.</p>
+    </div>
+
+    <!-- ABOUT US -->
+    <section id="about">
+        <h2>ABOUT US</h2>
+        <div class="info-box">
+            <p>
+                SKYFLOW ESPORTS is a modern esports organisation built with passion, discipline, and a strong vision to create a dominant force in competitive gaming.
+Founded with the goal of providing structured opportunities to talented players across India, we focus on excellence, teamwork, and growth — both inside and outside the game.
+
+Over the years, esports has evolved from casual gaming into a global competitive industry, and we are proud to be a part of this revolution.
+At FF ESPORTS, we believe that true success comes from hard work, daily improvement, and strong dedication. Our players represent these values every day — whether they are training, competing, or interacting with our community.
+
+We are more than just an esports team; we are a professional ecosystem designed to help players reach their highest potential.
+From strategy development and team coordination to mental strength and performance analysis, we take every step seriously to ensure our players stay ahead in every tournament.
+
+Our mission is to build a trusted, respected, and high-performing esports brand that stands out for professionalism, quality, and consistency.
+We aim to represent India at national and international championship levels while inspiring the next generation of gamers to chase their dreams without limits.
+
+We also believe in community, because a strong family of supporters is the heart of every successful team.
+Through events, streams, scrims, and interactive content, we stay connected with our fans and give new players a chance to learn and grow.
+
+At FF ESPORTS, we don’t just play the game —
+we build champions, create moments, and shape the future of esports.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN LINEUP -->
+    <section id="players">
+        <h2>MAIN LINEUP</h2>
+        <div class="player-grid">
+
+            <div class="player-card">
+                <img src="cropped_circle_image (5).png" class="player-img">
+                <h3>SF JUNIOR</h3>
+                <p>SNIPER+IGL</p>
+                <a class="insta-btn" href="https://www.instagram.com/cc.7vi?igsh=MTZvazhmZDVjdTc0" >Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="cropped_circle_image (6).png" class="player-img">
+                <h3>SF PHANTOM</h3>
+                <p>PRIMARY RUSHER</p>
+                <a class="insta-btn" href="https://instagram.com/" target="_blank">Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="cropped_circle_image (7).png" class="player-img">
+                <h3>SF BL4ZE</h3>
+                <p>SECONDARY RUSHER</p>
+                <a class="insta-btn" href="https://www.instagram.com/onlyy.neeraj?igsh=czNlY29leTI2cWpm">Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="img/player4.jpg" class="player-img">
+                <h3>PLAYER 4</h3>
+                <p>ROLE: ________</p>
+                <a class="insta-btn" href="https://instagram.com/" target="_blank">Instagram</a>
+            </div>
+
+        </div>
+
+        <h2>2ND LINEUP</h2>
+        <div class="player-grid">
+
+            <div class="player-card">
+                <img src="cropped_circle_image (3).png" class="player-img">
+                <h3>SF OGGY</h3>
+                <p>IGL+ ASSUALTER</p>
+                <a class="insta-btn" href="https://www.instagram.com/__nobody__yt_?igsh=MXVibHdxcG9peGJpcw==">Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="img/2nd2.jpg" class="player-img">
+                <h3>SF EREN</h3>
+                <p> PRIMARY RUSHER</p>
+                <a class="insta-btn" href="https://www.instagram.com/eren_yeager_094?igsh=MWV4MTZoMDZuZW83ag==">Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="cropped_circle_image (2).png" class="player-img">
+                <h3>SF W!ZARD</h3>
+                <p>SECONDARY RUSHER</p>
+                <a class="insta-btn" href="https://www.instagram.com/wi.zx3?igsh=dmhiYjFmZnExeHRt">Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="cropped_circle_image (4).png" class="player-img">
+                <h3>SF DHRUV </h3>
+                <p>SNIPER</p>
+                <a class="insta-btn" href="https://www.instagram.com/extraordinary_gamer_05?igsh=MWVsNmtobHFobndxMQ==">Instagram</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GIRLS LINEUP -->
+    <section id="girls">
+        <h2>GIRLS LINEUP</h2>
+        <div class="player-grid">
+
+            <div class="player-card">
+                <img src="img/girl1.jpg" class="player-img">
+                <h3>GIRL PLAYER 1</h3>
+                <p>ROLE: ________</p>
+                <a class="insta-btn" href="#">Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="img/girl2.jpg" class="player-img">
+                <h3>GIRL PLAYER 2</h3>
+                <p>ROLE: ________</p>
+                <a class="insta-btn" href="#">Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="img/girl3.jpg" class="player-img">
+                <h3>GIRL PLAYER 3</h3>
+                <p>ROLE: ________</p>
+                <a class="insta-btn" href="#">Instagram</a>
+            </div>
+
+            <div class="player-card">
+                <img src="img/girl4.jpg" class="player-img">
+                <h3>GIRL PLAYER 4</h3>
+                <p>ROLE: ________</p>
+                <a class="insta-btn" href="#">Instagram</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EX PLAYERS -->
+    <section id="ex">
+        <h2>EX ESPORTS PLAYERS</h2>
+        <div class="player-grid">
+
+            <!-- 8 EX PLAYERS -->
+            <div class="player-card"><img src="cropped_circle_image (1).png" class="player-img"><h3>SF RAVYN</h3><p> ASSOLTER</p>
+            <a class="insta-btn" href="https://www.instagram.com/xc.ravyn._?igsh=MW1kNndlN2hmcjY5Yg==">Instagram</a
+             </div>
+            <div class="player-card"><img src="img/ex2.jpg" class="player-img"><h3>EX PLAYER 2</h3><p>ROLE: ________</p></div>
+            <div class="player-card"><img src="img/ex3.jpg" class="player-img"><h3>EX PLAYER 3</h3><p>ROLE: ________</p></div>
+            <div class="player-card"><img src="img/ex4.jpg" class="player-img"><h3>EX PLAYER 4</h3><p>ROLE: ________</p></div>
+            <div class="player-card"><img src="img/ex5.jpg" class="player-img"><h3>EX PLAYER 5</h3><p>ROLE: ________</p></div>
+            <div class="player-card"><img src="img/ex6.jpg" class="player-img"><h3>EX PLAYER 6</h3><p>ROLE: ________</p></div>
+            <div class="player-card"><img src="img/ex7.jpg" class="player-img"><h3>EX PLAYER 7</h3><p>ROLE: ________</p></div>
+            <div class="player-card"><img src="img/ex8.jpg" class="player-img"><h3>EX PLAYER 8</h3><p>ROLE: ________</p></div>
+
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+        <h2>ACHIEVEMENTS</h2>
+        <div class="info-box">
+            <p>👾 OVER  TRUSTED 3K COMMUNITY MEMBERS ON DISCORD👾</p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+        <h2>COMMUNITY REVIEWS</h2>
+        <div class="review-box">
+            <p>⭐ "One of the cleanest esports orgs out there!"</p>
+        </div>
+            review-box">
+
+<div class="review-box"
+            <p>⭐ "SKYFLOW ESPORTS Discord Server really deserves appreciation! Matches start on time, IDs are shared without delay, and results are announced quickly. The management team takes instant action and maintains great coordination. One of the most well-organized servers I’ve played in — truly impressive! 💯🔥."</p>
+        </div>
+        <div class="review-box"
+        <p>Very good mangement and PT bhi jaldii aata hai or jo qualify kar te hai vo log ko bhi jaldi mel jata hai idp grps best mangement.
+
+Feedback:- Bass b2b 4 hoga to acha hoga</p>
+</div>
+<div class="review-box"
+<p>Badhiya management hai ye server ka aisa management nahi deta koi match time pe host vc me rheta hai help ke liye aur PT toh bahot jaldi dete hai as compared to other server.. VERY GOOD MANAGEMENT!!! 👏</p>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section id="feedback">
+        <h2>SUBMIT FEEDBACK</h2>
+        <div class="feedback-box">
+            <textarea placeholder="Write your feedback here..."></textarea>
+            <button onclick="submitFeedback()">Submit</button>
+        </div>
+    </section>
+
+    <script>
+        function submitFeedback() {
+            alert("Thank you! Your feedback has been submitted.");
+        }
+    </script>
+
+    <footer>
+        <p>© 2025 SKYFLOW ESPORTS— All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
