@@ -1,9 +1,4 @@
-// Firebase Imports
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword }
-from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
-
-// Your Firebase Config (SAFE PUBLIC INFO)
+// Firebase Config
 const firebaseConfig = {
     apiKey: "AIzaSyD7t_b2RAVwTHCw2H8l7OJ84qg6VPNv4e0",
     authDomain: "skyflowesports-a79e7.firebaseapp.com",
@@ -13,21 +8,21 @@ const firebaseConfig = {
     appId: "1:520696951008:web:cd99681cbd8b9b289ae085"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+// Init Firebase
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
 
 // Login function
-window.login = function() {
+function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const errorMsg = document.getElementById("errorMsg");
-    
-    signInWithEmailAndPassword(auth, email, password)
+
+    auth.signInWithEmailAndPassword(email, password)
         .then(() => {
-            window.location.href = "dashboard.html";
+            window.location.href = "dashboard.html"; // redirect
         })
         .catch((error) => {
-            errorMsg.textContent = error.message.replace("Firebase:", "");
+            errorMsg.textContent = error.message;
         });
-};
+}
