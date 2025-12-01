@@ -14,6 +14,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            color: white;
         }
 
         .login-box {
@@ -21,8 +22,8 @@
             padding: 40px;
             border-radius: 15px;
             width: 330px;
-            box-shadow: 0 0 15px #7a00ff88;
             text-align: center;
+            box-shadow: 0 0 15px #7a00ff;
         }
 
         h2 {
@@ -35,10 +36,9 @@
             padding: 12px;
             border: none;
             border-radius: 8px;
-            outline: none;
-            margin-bottom: 15px;
             background: #292929;
             color: white;
+            margin-bottom: 15px;
         }
 
         button {
@@ -47,10 +47,9 @@
             background: #7a00ff;
             border: none;
             border-radius: 8px;
+            color: white;
             cursor: pointer;
             font-size: 16px;
-            color: white;
-            margin-top: 10px;
         }
 
         button:hover {
@@ -58,7 +57,7 @@
         }
 
         .error {
-            color: #ff6b6b;
+            color: #ff6666;
             margin-top: 10px;
         }
     </style>
@@ -76,8 +75,11 @@
         <p class="error" id="errorMsg"></p>
     </div>
 
-    <!-- Firebase -->
-    <script type="module" src="auth.js"></script>
+    <!-- Firebase Compat Scripts (WORKS on GitHub Pages) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
 
+    <!-- Your auth logic -->
+    <script src="auth.js"></script>
 </body>
 </html>
